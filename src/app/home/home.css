@@ -1,0 +1,26 @@
+section {
+  height: 80vh;
+  background-color: #1abc9c;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.linestar,
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.avatar-container {
+  width: 250px;
+}
+
+.hero-line {
+  width: 70px;
+  height: 4px;
+  border-radius: 2px;
+}

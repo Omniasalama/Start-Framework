@@ -1,0 +1,80 @@
+<section class="py-5">
+  <div class="container">
+    <div class="tittle">
+      <h2 class="text-uppercase text-center">contact section</h2>
+      <div class="d-flex justify-content-center align-items-center mb-3 linestar">
+        <div class="hero-line me-3"></div>
+        <i class="fas fa-star fs-3"></i>
+        <div class="hero-line ms-3"></div>
+      </div>
+    </div>
+
+    <form (submit)="onSubmit($event)" class="w-50 p-3 mx-auto mt-5 ">
+      <!-- userName -->
+      <div class="form-group mb-3">
+        <label for="userName"
+               class="form-label text-teal label-hidden"
+               [class.label-visible]="userNameLabelVisible">
+          userName :
+        </label>
+        <input
+          type="text"
+          id="userName"
+          class="form-control"
+          placeholder="userName"
+          (keydown)="onUserNameKeyDown()"
+          (input)="onUserNameInput($event)" />
+      </div>
+
+      <!-- userAge -->
+      <div class="form-group mb-3">
+        <label for="userAge"
+               class="form-label text-teal label-hidden"
+               [class.label-visible]="userAgeLabelVisible">
+          userAge :
+        </label>
+        <input
+          type="number"
+          id="userAge"
+          class="form-control"
+          placeholder="userAge"
+          (keydown)="onUserAgeKeyDown()"
+          (input)="onUserAgeInput($event)" />
+      </div>
+
+      <!-- userEmail -->
+      <div class="form-group mb-3">
+        <label for="userEmail"
+               class="form-label text-teal label-hidden"
+               [class.label-visible]="userEmailLabelVisible">
+          userEmail :
+        </label>
+        <input
+          type="email"
+          id="userEmail"
+          class="form-control"
+          placeholder="userEmail"
+          (keydown)="onUserEmailKeyDown()"
+          (input)="onUserEmailInput($event)" />
+      </div>
+
+      <!-- userPassword -->
+      <div class="form-group mb-3">
+        <label for="userPassword"
+               class="form-label text-teal label-hidden"
+               [class.label-visible]="userPasswordLabelVisible">
+          userPassword :
+        </label>
+        <input
+          type="password"
+          id="userPassword"
+          class="form-control "
+          placeholder="userPassword"
+          (keydown)="onUserPasswordKeyDown()"
+          (input)="onUserPasswordInput($event)" />
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+    </form>
+  </div>
+</section>

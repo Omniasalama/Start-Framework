@@ -1,0 +1,100 @@
+<section class="portfolio-section">
+  <div class="container">
+    <div class="tittle pt-5 text-center">
+      <h1 class="text-uppercase">portfolio component</h1>
+      <div
+        class="d-flex justify-content-center align-items-center mb-4 linestar"
+      >
+        <div class="hero-line me-3"></div>
+        <i class="fas fa-star fs-3"></i>
+        <div class="hero-line ms-3"></div>
+      </div>
+    </div>
+
+    <!-- Image Grid -->
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div
+          class="image-box position-relative"
+          (click)="openModal('imgs/poert1.png')"
+        >
+          <img src="imgs/poert1.png" class="img-fluid" />
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="fas fa-plus text-white fs-1"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="image-box position-relative"
+          (click)="openModal('imgs/port2.png')"
+        >
+          <img src="imgs/port2.png" class="img-fluid" />
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="fas fa-plus text-white fs-1"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="image-box position-relative"
+          (click)="openModal('imgs/port3.png')"
+        >
+          <img src="imgs/port3.png" class="img-fluid" />
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="fas fa-plus text-white fs-1"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="image-box position-relative"
+          (click)="openModal('imgs/poert1.png')"
+        >
+          <img src="imgs/poert1.png" class="img-fluid" />
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="fas fa-plus text-white fs-1"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="image-box position-relative"
+          (click)="openModal('imgs/port2.png')"
+        >
+          <img src="imgs/port2.png" class="img-fluid" />
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="fas fa-plus text-white fs-1"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="image-box position-relative"
+          (click)="openModal('imgs/port3.png')"
+        >
+          <img src="imgs/port3.png" class="img-fluid" />
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="fas fa-plus text-white fs-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body text-center p-0">
+          <img [src]="selectedImage" class="img-fluid modal-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
